@@ -1,5 +1,30 @@
 # Duplex Name Tag Mail Merge
 
+## What it is
+
+A Word mail-merge template and Excel workbook that print double-sided name tags, six per sheet, with each back lined up behind its front. No macros or add-ins.
+
+## Problem it solves
+
+When you print a grid of name tags double-sided, the back page has to be merged in a shuffled order or the names won't match front to back. Doing that by hand is error-prone and leads to reprints.
+
+## How it works
+
+1. Enter names in a plain list on the workbook's **Roster** tab.
+2. Formulas on the **Mail Merge List** tab reorder them into the correct front/back print order.
+3. Merge that list into the Word template and print two-sided (long-edge flip).
+4. Laminate, cut and attach.
+
+## Status
+
+**Built and used.**
+
+*Designed by me; drafted with Claude/ChatGPT.*
+
+---
+
+## Details
+
 Print double-sided, laminated name tags — 6 per sheet, front and back automatically
 lined up — using nothing but Word mail merge and an Excel formula. No macros,
 no add-ins.
@@ -59,11 +84,12 @@ plain list, it computes the merge order.
 
 ## What's in this repo
 
-```
-templates/
-  Name_Tag_Template.docx        Word mail-merge template, 6 tags per sheet
-  Name_Tag_Roster_Workbook.xlsx Roster + auto-generated Mail Merge List
-```
+| File | What it is |
+|---|---|
+| `Name_Tag_Template.docx` | Word mail-merge template, 6 tags per sheet |
+| `Name_Tag_Roster_Workbook.xlsx` | Roster + auto-generated Mail Merge List |
+| `name-tag-mail-merge.zip` | Both files above in one download |
+| `LICENSE.txt` | MIT license |
 
 The Word template has a `[ YOUR LOGO / ORGANIZATION NAME ]` placeholder in
 each cell — swap that for your own logo/wordmark once, and it carries across
@@ -126,4 +152,4 @@ the row in place rather than deleting it.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Use, adapt, and share freely.
+MIT — see [LICENSE.txt](LICENSE.txt). Use, adapt, and share freely.
